@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(images/bg-pattern-top-desktop.svg), 
+  url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: 20rem 10rem, 35rem 30rem;
+  font-family: League Spartan;
+  font-size: 15px;
+}
+
+.container {
+  padding: 3rem 3rem;
+  display: flex;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  width: 7rem;
+  max-width: 750px;
+}
+
+.text {
+  margin-top: 1rem;
+  width: 20rem;
+  color: hsl(303, 10%, 53%);
+  line-height: 1rem;
+}
+
+.ratings {
+  display: grid;
+  margin-top: 1rem;
+  font-size: 10px;
+  max-width: 750px;
+}
+
+.first-rate {
+  display: flex;
+  width: 15rem;
+  height: 1.5rem;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+}
+
+.second-rate {
+  display: flex;
+  margin-top: .5rem;
+  margin-left: 1rem;
+  width: 15rem;
+  height: 1.5rem;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+}
+
+.third-rate {
+  display: flex;
+  margin-top: .5rem;
+  margin-left: 2rem;
+  width: 15rem;
+  height: 1.5rem;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+}
+
+.icons img {
+  width: .5rem;
+  height: .5rem;
+  
+}
+
+.icons {
+  padding: .5rem;
+  margin-left: 1rem;
+}
+
+.rates {
+  padding: .5rem;
+  color: hsl(300, 43%, 22%);
+  font-weight: 600;
+  margin-left: .5rem;
+}
+
+.buyers {
+  max-width: 750px;
+  padding: 3rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.buyer1 {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 5px;
+  padding: .5rem;
+  width: 12rem;
+  height: 9rem;
+}
+
+.buyer2 {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 5px;
+  padding: .5rem;
+  margin-top: 1rem ;
+  margin-left: .5rem;
+  width: 12rem;
+  height: 9rem;
+}
+
+.buyer3 {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 5px;
+  padding: .5rem;
+  margin-top: 2rem;
+  margin-left: .5rem;
+  width: 12rem;
+  height: 9rem;
+}
+
+.buyer1 img, .buyer2 img, .buyer3 img {
+  width: 2rem;
+  border-radius: 50%;
+  padding: .2rem;
+}
+
+.buyer-info {
+  margin-top: .5rem;
+  margin-left: 1rem;
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+}
+
+.buyer-col {
+  display: flex;
+  margin-left: .5rem;
+}
+
+.quote {
+  font-size: 12px;
+  color: hsl(0, 0%, 100%);
+  padding: .8rem;
+}
+
+.verified {
+  color: hsl(333, 80%, 67%);
+  font-size: 12px;
+}
+
+@media (max-width: 400px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  .header {
+    font-size: 2rem;
+    font-weight: 700;
+    width: 12rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  .text {
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+  .ratings {
+    font-size: 1rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+  .first-rate {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    width: 15rem;
+    max-width: 600px;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  .second-rate {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 15rem;
+    max-width: 600px;
+    height: 4rem;
+  }
+  .third-rate {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 15rem;
+    max-width: 600px;
+    height: 4rem;
+  }
+
+  .icons img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .buyers {
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    padding-top: .2rem;
+  }
+  .buyer1 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    padding: .5rem;
+    margin: 0 auto;
+    width: 12rem;
+    max-width: 600px;
+    height: 10rem;
+  }
+  .buyer2 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    padding: .5rem;
+    margin: 1rem auto;
+    width: 12rem;
+    height: 10rem;
+  }
+  .buyer3 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    padding: .5rem;
+    margin: 0 auto;
+    width: 12rem;
+    height: 10rem;
+  }
+  .buyer1 img, .buyer2 img, .buyer3 img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: .2rem;
+  }
+  .quote {
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+    padding: .5rem;
+  }
+  .buyer-info {
+    margin-top: .5rem;
+  }
+  .name {
+    margin-left: 0;
+  }
+  .buyer-col {
+    flex-direction: row;
+  }
+  .quote {
+    margin-top: .2rem;
+    line-height: .8rem;
+  }
+  .verified {
+    margin-top: .3rem;
+  }
+
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
